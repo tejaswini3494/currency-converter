@@ -82,8 +82,7 @@ btn.addEventListener("click", async (e) => {
 
   console.log(finalAmt);
 
-  let msg1 = document.querySelector(".msg1");
-  let msg2= document.querySelector(".msg2");
-  msg1.innerText = `${amtVal} ${fromCurr.value}=`;
-  msg2.innerText = `${finalAmt} ${toCurr.value}`;
+  let msg = document.querySelector(".msg");
+
+  msg.innerText = `${amtVal} ${fromCurr.value} = ${finalAmt} ${toCurr.value}`;
 });
